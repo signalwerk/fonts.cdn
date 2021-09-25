@@ -16,11 +16,13 @@ curl "https://raw.githubusercontent.com/googlefonts/opensans/main/fonts/variable
 
 
 # remove the width axis
+# https://fonttools.readthedocs.io/en/latest/varLib/instancer.html
 fonttools varLib.instancer "$path/OpenSans-Italic[wdth,wght@75..100,300..800].ttf" wdth=100 wght=300:800 -o "$path/OpenSans-Italic[wght@300..800].ttf"
 fonttools varLib.instancer "$path/OpenSans[wdth,wght@75..100,300..800].ttf" wdth=100 wght=300:800 -o "$path/OpenSans[wght@300..800].ttf"
 
 
 # subset font to latin character-range
+# https://fonttools.readthedocs.io/en/latest/subset/index.html
 pyftsubset \
     "$path/OpenSans-Italic[wght@300..800].ttf" \
     --output-file="$path/OpenSans-Italic[wght@300..800][subset@latin].ttf" \
@@ -35,7 +37,6 @@ pyftsubset \
 
 woff2_compress "$path/OpenSans-Italic[wght@300..800][subset@latin].ttf"
 woff2_compress "$path/OpenSans[wght@300..800][subset@latin].ttf"
-
 
 
 sfnt2woff-zopfli  "$path/OpenSans-Italic[wght@300..800][subset@latin].ttf"
