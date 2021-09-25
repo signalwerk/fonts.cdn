@@ -39,9 +39,9 @@ font-weight: 700; /* bold */
   --open-sans-fea-aalt: "aalt" off;
   --open-sans-fea-dnom: "dnom" off;
   --open-sans-fea-frac: "frac" off;
-  --open-sans-fea-frac: "liga" on;
+  --open-sans-fea-liga: "liga" on;
   --open-sans-fea-lnum: "lnum" off;
-  --open-sans-fea-lnum: "locl" on;
+  --open-sans-fea-locl: "locl" on;
   --open-sans-fea-numr: "numr" off;
   --open-sans-fea-onum: "onum" off;
   --open-sans-fea-ordn: "ordn" off;
