@@ -7,7 +7,7 @@ path="./docs/assets/fonts/opensans/latest"
 rm -rf $path
 mkdir -p $path
 
-# hash=`git ls-remote git://github.com/googlefonts/opensans.git | grep refs/heads/master | cut -f 1`
+hash=`git ls-remote git://github.com/googlefonts/opensans.git | grep refs/heads/master | cut -f 1`
 echo "{ \"version\": \"$hash\" }" > $path/version.json
 
 # get the variable fonts
@@ -39,5 +39,5 @@ woff2_compress "$path/OpenSans-Italic[wght@300..800][subset@latin].ttf"
 woff2_compress "$path/OpenSans[wght@300..800][subset@latin].ttf"
 
 
-sfnt2woff-zopfli  "$path/OpenSans-Italic[wght@300..800][subset@latin].ttf"
-sfnt2woff-zopfli  "$path/OpenSans[wght@300..800][subset@latin].ttf"
+# sfnt2woff-zopfli  "$path/OpenSans-Italic[wght@300..800][subset@latin].ttf"
+# sfnt2woff-zopfli  "$path/OpenSans[wght@300..800][subset@latin].ttf"
