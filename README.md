@@ -43,9 +43,9 @@ font-weight: 700; /* bold */
   --open-sans-fea-lnum: "lnum" off;
   --open-sans-fea-locl: "locl" on;
   --open-sans-fea-numr: "numr" off;
-  --open-sans-fea-onum: "onum" off;
+  --open-sans-fea-onum: "onum" on;
   --open-sans-fea-ordn: "ordn" off;
-  --open-sans-fea-pnum: "pnum" off;
+  --open-sans-fea-pnum: "pnum" on;
   --open-sans-fea-salt: "salt" off;
   --open-sans-fea-ss01: "ss01" off;
   --open-sans-fea-ss02: "ss02" off;
@@ -57,6 +57,31 @@ font-weight: 700; /* bold */
 }
 
 html {
+  font-feature-settings: var(--open-sans-fea-aalt), var(--open-sans-fea-dnom),
+    var(--open-sans-fea-frac), var(--open-sans-fea-liga), var(
+      --open-sans-fea-lnum
+    ), var(--open-sans-fea-locl), var(--open-sans-fea-numr), var(
+      --open-sans-fea-onum
+    ), var(--open-sans-fea-ordn), var(--open-sans-fea-pnum), var(
+      --open-sans-fea-salt
+    ), var(--open-sans-fea-ss01), var(--open-sans-fea-ss02), var(
+      --open-sans-fea-ss03
+    ), var(--open-sans-fea-subs), var(--open-sans-fea-sups), var(
+      --open-sans-fea-tnum
+    ), var(--open-sans-fea-zero);
+}
+```
+
+### Tabular Lining figures
+
+```css
+.example {
+  --open-sans-fea-onum: "onum" off;
+  --open-sans-fea-pnum: "pnum" off;
+
+  --open-sans-fea-lnum: "lnum" on;
+  --open-sans-fea-tnum: "tnum" on;
+
   font-feature-settings: var(--open-sans-fea-aalt), var(--open-sans-fea-dnom),
     var(--open-sans-fea-frac), var(--open-sans-fea-liga), var(
       --open-sans-fea-lnum
