@@ -114,6 +114,10 @@ brew install woff2
 sh generate.sh
 ```
 
+## ToDo
+* [U+202F NARROW NO-BREAK SPACE not in font](https://github.com/googlefonts/opensans/issues/37)
+* Are all four figure-sets in the font?
+
 ## Usage
 * [Signalwerk · Webtypo](https://webtypo.signalwerk.ch/)
 * [Signalwerk · IAD2021](https://iad2021.signalwerk.ch/)
