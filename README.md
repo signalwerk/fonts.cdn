@@ -9,7 +9,7 @@ private font hosting. API like google fonts.
 ```html
 <link rel="preconnect" href="https://fonts.signalwerk.ch" />
 <link
-  href="https://fonts.signalwerk.ch/css/latest/family=OpenSans:ital,wght@0,300..800;1,300..800.css"
+  href="https://fonts.signalwerk.ch/css/latest/family=Open+Sans:ital,wght@0,300..800;1,300..800.css"
   rel="stylesheet"
 />
 ```
@@ -18,7 +18,7 @@ private font hosting. API like google fonts.
 
 ```css
 <style>
-@import url('https://fonts.signalwerk.ch/css/latest/family=OpenSans:ital,wght@0,300..800;1,300..800.css');
+@import url('https://fonts.signalwerk.ch/css/latest/family=Open+Sans:ital,wght@0,300..800;1,300..800.css');
 </style>
 ```
 
@@ -113,3 +113,7 @@ brew install woff2
 ```sh
 sh generate.sh
 ```
+
+## Usage
+* [Signalwerk · Webtypo](https://webtypo.signalwerk.ch/)
+* [Signalwerk · IAD2021](https://iad2021.signalwerk.ch/)
