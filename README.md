@@ -29,7 +29,7 @@ private font hosting. API like google fonts.
 
 ```html
 <link
-  href="https://fonts.signalwerk.ch/css/latest/family=Work+Sans/ital,wght@0,100..900;1,100..900.css"
+  href="https://fonts.signalwerk.ch/css/latest/family=Work+Sans:ital,wght@0,100..900;1,100..900.css"
   rel="stylesheet"
 />
 ```
@@ -38,7 +38,7 @@ private font hosting. API like google fonts.
 
 ```css
 <style>
-@import url('https://fonts.signalwerk.ch/css/latest/family=Work+Sans/ital,wght@0,100..900;1,100..900.css');
+@import url('https://fonts.signalwerk.ch/css/latest/family=Work+Sans:ital,wght@0,100..900;1,100..900.css');
 </style>
 ```
 
@@ -209,6 +209,11 @@ brew install woff2
 ```sh
 sh generate.sh
 ```
+
+## ToDo
+
+- [U+202F NARROW NO-BREAK SPACE not in font](https://github.com/googlefonts/opensans/issues/37)
+- Are all four figure-sets in the font?
 
 ## Usage
 
