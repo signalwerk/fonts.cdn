@@ -4,17 +4,18 @@ private font hosting. API like google fonts.
 
 ## Load fonts from CDN
 
+### OpenSans
+
 #### In the HTML
 
 ```html
-<link rel="preconnect" href="https://fonts.signalwerk.ch" />
 <link
   href="https://fonts.signalwerk.ch/css/latest/family=Open+Sans:ital,wght@0,300..800;1,300..800.css"
   rel="stylesheet"
 />
 ```
 
-### In CSS
+#### In CSS
 
 ```css
 <style>
@@ -22,7 +23,28 @@ private font hosting. API like google fonts.
 </style>
 ```
 
+### WorkSans
+
+#### In the HTML
+
+```html
+<link
+  href="https://fonts.signalwerk.ch/css/latest/family=Work+Sans/ital,wght@0,100..900;1,100..900.css"
+  rel="stylesheet"
+/>
+```
+
+#### In CSS
+
+```css
+<style>
+@import url('https://fonts.signalwerk.ch/css/latest/family=Work+Sans/ital,wght@0,100..900;1,100..900.css');
+</style>
+```
+
 ## Use fonts
+
+### OpenSans
 
 ```css
 font-family: "Open Sans", sans-serif;
@@ -32,7 +54,81 @@ font-weight: 400; /* normal */
 font-weight: 700; /* bold */
 ```
 
+### WorkSans
+
+```css
+font-family: "Work Sans", sans-serif;
+
+/* classic */
+font-weight: 400; /* normal */
+font-weight: 700; /* bold */
+font-weight: 900; /* black */
+```
+
 ## Use OpenType Features
+
+### WorkSans
+
+```css
+:root {
+  --work-sans-fea-aalt: "aalt" off;
+  --work-sans-fea-c2sc: "c2sc" off;
+  --work-sans-fea-calt: "calt" on;
+  --work-sans-fea-case: "case" off;
+  --work-sans-fea-dlig: "dlig" off;
+  --work-sans-fea-dnom: "dnom" off;
+  --work-sans-fea-frac: "frac" off;
+  --work-sans-fea-hist: "hist" off;
+  --work-sans-fea-liga: "liga" on;
+  --work-sans-fea-lnum: "lnum" off;
+  --work-sans-fea-locl: "locl" off;
+  --work-sans-fea-nalt: "nalt" off;
+  --work-sans-fea-numr: "numr" off;
+  --work-sans-fea-onum: "onum" off;
+  --work-sans-fea-ordn: "ordn" off;
+  --work-sans-fea-ornm: "ornm" off;
+  --work-sans-fea-pnum: "pnum" off;
+  --work-sans-fea-rvrn: "rvrn" off;
+  --work-sans-fea-salt: "salt" off;
+  --work-sans-fea-sinf: "sinf" off;
+  --work-sans-fea-smcp: "smcp" off;
+  --work-sans-fea-ss02: "ss02" off;
+  --work-sans-fea-ss03: "ss03" off;
+  --work-sans-fea-ss04: "ss04" off;
+  --work-sans-fea-ss05: "ss05" off;
+  --work-sans-fea-subs: "subs" off;
+  --work-sans-fea-sups: "sups" off;
+  --work-sans-fea-tnum: "tnum" off;
+  --work-sans-fea-zero: "zero" off;
+  --work-sans-fea-cpsp: "cpsp" off;
+  --work-sans-fea-kern: "kern" on;
+}
+
+html {
+  font-feature-settings: var(--work-sans-fea-aalt), var(--work-sans-fea-c2sc),
+    var(--work-sans-fea-calt), var(--work-sans-fea-case), var(
+      --work-sans-fea-dlig
+    ), var(--work-sans-fea-dnom), var(--work-sans-fea-frac), var(
+      --work-sans-fea-hist
+    ), var(--work-sans-fea-liga), var(--work-sans-fea-lnum), var(
+      --work-sans-fea-locl
+    ), var(--work-sans-fea-nalt), var(--work-sans-fea-numr), var(
+      --work-sans-fea-onum
+    ), var(--work-sans-fea-ordn), var(--work-sans-fea-ornm), var(
+      --work-sans-fea-pnum
+    ), var(--work-sans-fea-rvrn), var(--work-sans-fea-salt), var(
+      --work-sans-fea-sinf
+    ), var(--work-sans-fea-smcp), var(--work-sans-fea-ss02), var(
+      --work-sans-fea-ss03
+    ), var(--work-sans-fea-ss04), var(--work-sans-fea-ss05), var(
+      --work-sans-fea-subs
+    ), var(--work-sans-fea-sups), var(--work-sans-fea-tnum), var(
+      --work-sans-fea-zero
+    ), var(--work-sans-fea-cpsp), var(--work-sans-fea-kern);
+}
+```
+
+### OpenSans
 
 ```css
 :root {
@@ -115,5 +211,6 @@ sh generate.sh
 ```
 
 ## Usage
-* [Signalwerk · Webtypo](https://webtypo.signalwerk.ch/)
-* [Signalwerk · IAD2021](https://iad2021.signalwerk.ch/)
+
+- [Signalwerk · Webtypo](https://webtypo.signalwerk.ch/)
+- [Signalwerk · IAD2021](https://iad2021.signalwerk.ch/)
