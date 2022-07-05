@@ -42,6 +42,25 @@ private font hosting. API like google fonts.
 </style>
 ```
 
+### Noto Emoji
+
+#### In the HTML
+
+```html
+<link
+  href="https://fonts.signalwerk.ch/css/latest/family=Noto+Emoji:wght@300..700.css"
+  rel="stylesheet"
+/>
+```
+
+#### In CSS
+
+```css
+<style>
+@import url('https://fonts.signalwerk.ch/css/latest/family=Noto+Emoji:wght@300..700.css');
+</style>
+```
+
 ## Use fonts
 
 ### OpenSans
@@ -63,6 +82,16 @@ font-family: "Work Sans", sans-serif;
 font-weight: 400; /* normal */
 font-weight: 700; /* bold */
 font-weight: 900; /* black */
+```
+
+### Noto Emoji
+
+```css
+font-family: "Noto Emoji", sans-serif;
+
+/* classic */
+font-weight: 400; /* normal */
+font-weight: 700; /* bold */
 ```
 
 ## Use OpenType Features
