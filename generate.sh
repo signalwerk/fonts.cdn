@@ -37,6 +37,22 @@ function buildWorkSans {
 }
 
 
+function buildPlexMono {
+    # https://github.com/IBM/plex
+
+    path="./docs/assets/fonts/plex/latest"
+
+    rm -rf $path
+    mkdir -p $path
+
+    hash=`git ls-remote https://github.com/IBM/plex.git | grep refs/heads/master | cut -f 1`
+    echo "{ \"version\": \"$hash\" }" > $path/version.json
+
+    curl "https://raw.githubusercontent.com/IBM/plex/master/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Bold-Latin1.woff2" --output "$path/IBMPlexMono-Bold-Latin1.woff2"
+    curl "https://raw.githubusercontent.com/IBM/plex/master/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-BoldItalic-Latin1.woff2" --output "$path/IBMPlexMono-BoldItalic-Latin1.woff2"
+    curl "https://raw.githubusercontent.com/IBM/plex/master/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Italic-Latin1.woff2" --output "$path/IBMPlexMono-Italic-Latin1.woff2"
+    curl "https://raw.githubusercontent.com/IBM/plex/master/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Regular-Latin1.woff2" --output "$path/IBMPlexMono-Regular-Latin1.woff2"
+}
 
 
 function buildOpenSans {
@@ -110,6 +126,7 @@ function buildNotoEmoji {
 
 }
 
+buildPlexMono
 buildWorkSans
 buildOpenSans
 buildNotoEmoji

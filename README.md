@@ -23,6 +23,25 @@ private font hosting. API like google fonts.
 </style>
 ```
 
+### IBM Plex Mono
+
+#### In the HTML
+
+```html
+<link
+  href="https://fonts.signalwerk.ch/css/latest/family=IBM+Plex+Mono:ital,wght@0,400..700;1,400..700.css"
+  rel="stylesheet"
+/>
+```
+
+#### In CSS
+
+```css
+<style>
+@import url('https://fonts.signalwerk.ch/css/latest/family=IBM+Plex+Mono:ital,wght@0,400..700;1,400..700.css');
+</style>
+```
+
 ### WorkSans
 
 #### In the HTML
