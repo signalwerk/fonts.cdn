@@ -150,6 +150,11 @@ font-weight: 700; /* bold */
   --work-sans-fea-zero: "zero" off;
   --work-sans-fea-cpsp: "cpsp" off;
   --work-sans-fea-kern: "kern" on;
+
+
+  --work-sans-weight-normal: 400;
+  --work-sans-weight-bold: 700;
+  --work-sans-weight-black: 900;
 }
 
 html {
