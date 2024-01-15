@@ -151,7 +151,6 @@ font-weight: 700; /* bold */
   --work-sans-fea-cpsp: "cpsp" off;
   --work-sans-fea-kern: "kern" on;
 
-
   --work-sans-weight-normal: 400;
   --work-sans-weight-bold: 700;
   --work-sans-weight-black: 900;
@@ -272,3 +271,30 @@ sh generate.sh
 
 - [Signalwerk · Webtypo](https://webtypo.signalwerk.ch/)
 - [Signalwerk · IAD2021](https://iad2021.signalwerk.ch/)
+
+## Debug fonts
+
+### UnicodeBMPFallback
+
+#### In the HTML
+
+```html
+<link
+  href="https://fonts.signalwerk.ch/css/latest/family=Unicode+BMP+Fallback.css"
+  rel="stylesheet"
+/>
+```
+
+#### In CSS
+
+```html
+<style>
+  @import url("https://fonts.signalwerk.ch/css/latest/family=Unicode+BMP+Fallback.css");
+
+  :root {
+    font-family: "Unicode BMP Fallback";
+    font-style: normal;
+    font-weight: 400;
+  }
+</style>
+```

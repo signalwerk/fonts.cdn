@@ -1,0 +1,9 @@
+/* [0] */
+@font-face {
+  font-family: "Unicode BMP Fallback";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.signalwerk.ch/assets/fonts/UnicodeBMPFallback/latest/UnicodeBMPFallback.woff2")
+    format("woff2");
+  unicode-range: U+0000-FFFF;
+}

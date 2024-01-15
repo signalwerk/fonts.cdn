@@ -1,1 +1,4 @@
-*.ttf
+docs/assets/fonts/notoemoji/**/*.ttf
+docs/assets/fonts/opensans/**/*.ttf
+docs/assets/fonts/plex/**/*.ttf
+docs/assets/fonts/worksans/**/*.ttf
